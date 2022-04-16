@@ -53,6 +53,6 @@ test("password input should change", () => {
   const passwordInputEl = screen.getByPlaceholderText(/password/i);
   const testValue = "test";
 
-  fireEvent.change(usernameInputEl, { target: { value: testValue } });
+  fireEvent.change(passwordInputEl, { target: { value: testValue } });
   expect(passwordInputEl.value).toBe(testValue);
 });
